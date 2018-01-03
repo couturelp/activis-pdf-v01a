@@ -14,6 +14,8 @@ caching-compiler@1.1.9
 caching-html-compiler@1.1.2
 callback-hook@1.0.10
 check@1.2.5
+coffeescript@1.0.17
+cosmos:browserify@0.8.4
 ddp@1.3.0
 ddp-client@2.1.0
 ddp-common@1.2.9
@@ -58,6 +60,8 @@ npm-bcrypt@0.9.3
 npm-mongo@2.2.30
 observe-sequence@1.0.16
 ordered-dict@1.0.9
+pascoual:pdfjs@1.1.114
+pascoual:pdfkitx@0.0.3
 promise@0.9.0
 random@1.0.10
 rate-limit@1.0.8

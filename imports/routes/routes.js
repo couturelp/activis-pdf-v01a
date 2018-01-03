@@ -9,9 +9,10 @@ import NotFound from '../ui/NotFound';
 import Login from '../ui/Login';
 import Reset from '../ui/Reset';
 import RequestReset from '../ui/RequestReset';
+import PdfRequest from '../ui/PdfRequest';
 
 const unauthenticatedPages = ['/','/signup','reset-password','request-reset'];
-const authenticatedPages = ['/dashboard']
+const authenticatedPages = ['/dashboard','/pdfrequest']
 let isUnauthenticatedPage = true;
 let isAuthenticatedPage = false;
 
@@ -26,7 +27,7 @@ const ChangeTracker = withRouter(({match, location, history}) => {
 export const onAuthChange = (isAuthenticated) => {
     if (isAuthenticated){
       if (isUnauthenticatedPage){
-        history.replace('/dashboard');
+        history.replace('/pdfrequest');
       }
     }else{
       if (isAuthenticatedPage) {
@@ -44,6 +45,7 @@ export const routes = (
     <Route path="/dashboard" component={Dashboard} />
     <Route path="/request-reset" component={RequestReset} />
     <Route path="/reset-password/:token" component={Reset} />
+    <Route path="/pdfrequest" component={PdfRequest} />
     <Route component={NotFound}/>
     </Switch>
     <ChangeTracker/>

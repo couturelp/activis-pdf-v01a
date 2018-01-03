@@ -21,3 +21,5 @@ accounts-password@1.4.0
 session
 fourseven:scss
 service-configuration
+pascoual:pdfkitx
+pascoual:pdfjs

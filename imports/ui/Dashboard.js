@@ -1,7 +1,9 @@
 import React from 'react';
 import PrivateHeader from './PrivateHeader';
 
-import history from './../routes/history' 
+import history from './../routes/history' ;
+
+
 
 export default () => {
   if (!Meteor.userId()){

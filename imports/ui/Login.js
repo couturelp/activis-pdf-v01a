@@ -11,7 +11,7 @@ export default class Login extends React.Component {
   }
   componentDidMount(){
     if (Meteor.userId()){
-      this.props.history.replace('/dashboard');
+      this.props.history.replace('/pdfrequest');
     }
   };
   onSubmit(e){
